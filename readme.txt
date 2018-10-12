@@ -1,5 +1,5 @@
 [hr]
-[center][color=red][size=16pt][b]DOUGIEFRESH'S REORGANIZED ADMIN AREA V1.0[/b][/size][/color]
+[center][color=red][size=16pt][b]DOUGIEFRESH'S REORGANIZED ADMIN AREA V1.1[/b][/size][/color]
 [url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] => [url=http://custom.simplemachines.org/mods/index.php?mod=3973]Link to Mod[/url]
 [/center]
 [hr]
@@ -41,13 +41,19 @@ This mod was tested on SMF 2.0.9, but should work on earlier versions of SMF 2.0
 [color=blue][b][size=12pt][u]Other Notes[/u][/size][/b][/color]
 The reorganization of the Admin menu takes place AFTER the processing of the hooks....
 
+[url=http://custom.simplemachines.org/mods/index.php?mod=3907]SMF 2.1-style Admin Area[/url] should be installed prior to this mod.
+
 This mod was part of the [url=http://www.simplemachines.org/community/index.php?topic=520847.0]Real Tabs for Admin & Moderator Menus[/url] mod (version 2.x line) and has been expanded upon.
 
 This mod does not install any other mods in order to use, so if the specified mod is not installed, no menu change will be made.
 
 [color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
 [quote]
-[b][u]v1.0 - November 7th[/u][/b]
+[b][u]v1.1 - December 2nd, 2014[/u][/b]
+o Changed hook code back to original code edit in [b]Sources/Admin.php[/b]
+o Removed [url=http://custom.simplemachines.org/mods/index.php?mod=2167]Team Page[/url] from the list of areas in the [b]Configuration[/b] section...
+
+[b][u]v1.0 - November 7th, 2014[/u][/b]
 o Initial Re-Release to the Public
 [/quote]
 

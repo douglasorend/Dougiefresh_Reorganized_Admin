@@ -186,7 +186,7 @@ function RA_Reorganize(&$areas)
 		$security = $areas['config']['areas']['serversettings'];
 	unset($areas['config']['areas']['serversettings']);
 	$haystack = array('antispam', 'corefeatures', 'featuresettings', 'languages', 'serversettings',
-		'modsettings', 'current_theme', 'theme', 'teampage');
+		'modsettings', 'current_theme', 'theme');
 	foreach ($areas['config']['areas'] as $id => $area)
 	{
 		if (!in_array($id, $haystack))

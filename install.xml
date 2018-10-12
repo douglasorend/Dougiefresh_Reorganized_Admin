@@ -5,6 +5,19 @@
 <name>Tabs for Admin & Moderator Menus</name>
 <version>1.0</version>
 
+<file name="$sourcedir/Admin.php">
+	<operation>
+		<search position="replace"><![CDATA[call_integration_hook('integrate_admin_areas', array(&$admin_areas));]]></search>
+		<add><![CDATA[call_integration_hook('integrate_admin_areas', array(&$admin_areas));
+
+	// BEGIN MOD Dougiefresh's Reorganized Admin Menu
+	if (file_exists($sourcedir . '/Subs-ReorganizeAdmin.php'))
+	{
+		require_once($sourcedir . '/Subs-ReorganizeAdmin.php');
+		RA_Reorganize($admin_areas);
+	}]]></add>
+	</operation>
+</file>
 <file name="$sourcedir/ManageSettings.php">
 	<operation>
 		<search position="replace"><![CDATA[// Call the right function for this sub-acton.
