@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+<id>dougiefresh:TabbedAdminMenu</id>
+<name>Tabs for Admin & Moderator Menus</name>
+<version>1.0</version>
+
+<file name="$sourcedir/ManageSettings.php">
+	<operation>
+		<search position="replace"><![CDATA[// Call the right function for this sub-acton.
+	$subActions[$_REQUEST['sa']]();
+}
+
+// This is an overall control panel enabling/disabling lots of SMF's key feature components.]]></search>
+		<add><![CDATA[// Call the right function for this sub-acton.
+	if (in_array($_REQUEST['sa'], array('akismet', 'mentions', 'blockemail')))
+		redirectexit('action=admin;area=' . $_REQUEST['sa']);
+	$subActions[$_REQUEST['sa']]();
+}
+
+// This is an overall control panel enabling/disabling lots of SMF's key feature components.]]></add>
+	</operation>
+</file>
+<file name="$sourcedir/Mentions.php" error="skip">
+	<operation>
+		<search position="replace"><![CDATA[redirectexit('action=admin;area=modsettings;sa=mentions');]]></search>
+		<add><![CDATA[redirectexit('action=admin;area=mentions');]]></add>
+	</operation>
+	<operation>
+		<search position="replace"><![CDATA[$context['post_url'] = $scripturl . '?action=admin;area=modsettings;save;sa=mentions';]]></search>
+		<add><![CDATA[$context['post_url'] = $scripturl . '?action=admin;area=mentions;save';]]></add>
+	</operation>
+</file>
+<file name="$sourcedir/Subs-Akismet.php" error="skip">
+	<operation>
+		<search position="replace"><![CDATA[redirectexit('action=admin;area=modsettings;sa=akismet');]]></search>
+		<add><![CDATA[redirectexit('action=admin;area=modsettings;sa=akismet');]]></add>
+	</operation>
+	<operation>
+		<search position="replace"><![CDATA[$context['post_url'] = $scripturl . '?action=admin;area=modsettings;save;sa=akismet';]]></search>
+		<add><![CDATA[$context['post_url'] = $scripturl . '?action=admin;area=akismet;save';]]></add>
+	</operation>
+</file>
+<file name="$sourcedir/Subs-BlockEmailUsernames.php" error="skip">
+	<operation>
+		<search position="replace"><![CDATA[$context['post_url'] = $scripturl . '?action=admin;area=modsettings;save;sa=blockemail';]]></search>
+		<add><![CDATA[$context['post_url'] = $scripturl . '?action=admin;area=blockemail;save';]]></add>
+	</operation>
+	<operation>
+		<search position="replace"><![CDATA[redirectexit('action=admin;area=modsettings;sa=blockemail');]]></search>
+		<add><![CDATA[redirectexit('action=admin;area=blockemail');]]></add>
+	</operation>
+</file>
+<file name="$themedir/ManageAttachments.template.php">
+	<operation>
+		<search position="replace"><![CDATA[</div>
+		<div class="windowbg2">
+			<span class="topslice"><span></span></span>
+			<div class="content">
+				<a href="', $scripturl, '?action=admin;area=manageattachments;sa=browse">', $context['browse_type'] === 'attachments' ? '<img src="' . $settings['images_url'] . '/selected.gif" alt="&gt;" /> ' : '', $txt['attachment_manager_attachments'], '</a> |
+				<a href="', $scripturl, '?action=admin;area=manageattachments;sa=browse;avatars">', $context['browse_type'] === 'avatars' ? '<img src="' . $settings['images_url'] . '/selected.gif" alt="&gt;" /> ' : '', $txt['attachment_manager_avatars'], '</a> |
+				<a href="', $scripturl, '?action=admin;area=manageattachments;sa=browse;thumbs">', $context['browse_type'] === 'thumbs' ? '<img src="' . $settings['images_url'] . '/selected.gif" alt="&gt;" /> ' : '', $txt['attachment_manager_thumbs'], '</a>
+			</div>
+			<span class="botslice"><span></span></span>
+		</div>]]></search>
+		<add><![CDATA[</div>';
+	if ($_GET['area'] != 'avatars')
+		echo '
+		<div class="windowbg2">
+			<span class="topslice"><span></span></span>
+			<div class="content">
+				<a href="', $scripturl, '?action=admin;area=manageattachments;sa=browse">', $context['browse_type'] === 'attachments' ? '<img src="' . $settings['images_url'] . '/selected.gif" alt="&gt;" /> ' : '', $txt['attachment_manager_attachments'], '</a> |
+				<a href="', $scripturl, '?action=admin;area=manageattachments;sa=browse;thumbs">', $context['browse_type'] === 'thumbs' ? '<img src="' . $settings['images_url'] . '/selected.gif" alt="&gt;" /> ' : '', $txt['attachment_manager_thumbs'], '</a>
+			</div>
+			<span class="botslice"><span></span></span>
+		</div>';
+	echo ']]></add>
+	</operation>
+</file>
+</modification>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>dougiefresh:PackagesAndMods</id>
+	<name>Dougiefresh's Reorganized Admin Area</name>
+	<version>1.0</version>
+	<type>modification</type>
+
+	<install for="2.0 - 2.0.99">
+		<readme type="file" parsebbc="true">readme.txt</readme>
+		<code>add_remove_hook.php</code>
+		<modification>install.xml</modification>
+		<modification>language_english.xml</modification>
+		<modification>language_english-utf8.xml</modification>
+		<modification>language_english_british.xml</modification>
+		<modification>language_english_british-utf8.xml</modification>
+		<require-file name="Subs-ReorganizeAdminHook.php" destination="$sourcedir" />
+		<require-file name="Subs-ReorganizeHook.php" destination="$sourcedir" />
+	</install>
+	<uninstall for="2.0 - 2.0.99">
+		<code>add_remove_hook.php</code>
+		<modification reverse="true">install.xml</modification>
+		<modification reverse="true">language_english.xml</modification>
+		<modification reverse="true">language_english-utf8.xml</modification>
+		<modification reverse="true">language_english_british.xml</modification>
+		<modification reverse="true">language_english_british-utf8.xml</modification>
+		<remove-file name="$sourcedir/Subs-ReorganizeAdminHook.php" />
+		<remove-file name="$sourcedir/Subs-ReorganizeHook.php" />
+	</uninstall>
+</package-info>
