@@ -6,6 +6,8 @@
 * WITHOUT ANY WARRANTIES; without even any implied warranty of MERCHANsectionILITY
 * or FITNESS FOR A PARTICULAR PURPOSE .
 **********************************************************************************/
+if (!defined('SMF'))
+	die('Hacking attempt...');
 
 function RA_Reorganize(&$areas)
 {

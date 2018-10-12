@@ -1,5 +1,5 @@
 [hr]
-[center][color=red][size=16pt][b]DOUGIEFRESH'S REORGANIZED ADMIN AREA V1.2[/b][/size][/color]
+[center][color=red][size=16pt][b]DOUGIEFRESH'S REORGANIZED ADMIN AREA V1.3[/b][/size][/color]
 [url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] => [url=http://custom.simplemachines.org/mods/index.php?mod=3973]Link to Mod[/url]
 [/center]
 [hr]
@@ -49,18 +49,16 @@ This mod was part of the [url=http://www.simplemachines.org/community/index.php?
 This mod does not install any other mods in order to use, so if the specified mod is not installed, no menu change will be made.
 
 [color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
-[quote]
-[b][u]v1.2 - January 12th, 2015[/u][/b]
-o Moved [b]Permissions[/b] from under [b]Members[/b] into it's own area.
+The changelog has been removed and can be seen at [url=http://www.xptsp.com/board/index.php?topic=47.msg147#msg147]XPtsp.com[/url].
 
-[b][u]v1.1 - December 2nd, 2014[/u][/b]
-o Changed hook code back to original code edit in [b]Sources/Admin.php[/b]
-o Removed [url=http://custom.simplemachines.org/mods/index.php?mod=2167]Team Page[/url] from the list of areas in the [b]Configuration[/b] section...
+[color=blue][b][size=12pt][u]License[/u][/size][/b][/color]
+Copyright (c) 2015, Douglas Orend
+All rights reserved.
 
-[b][u]v1.0 - November 7th, 2014[/u][/b]
-o Initial Re-Release to the Public
-[/quote]
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
-[hr]
-[url=http://creativecommons.org/licenses/by/3.0][img]http://i.creativecommons.org/l/by/3.0/80x15.png[/img][/url]
-This work is licensed under a [url=http://creativecommons.org/licenses/by/3.0]Creative Commons Attribution 3.0 Unported License[/url]
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

@@ -1,0 +1,12 @@
+v1.3 - January 19th, 2015
+o License change to Simplified BSD.  No functionality change.
+
+v1.2 - January 12th, 2015
+o Moved Permissions from under Members into it's own area.
+
+v1.1 - December 2nd, 2014
+o Changed hook code back to original code edit in Sources/Admin.php
+o Removed Team Page from the list of areas in the Configuration section...
+
+v1.0 - November 7th, 2014
+o Initial Re-Release to the Public
