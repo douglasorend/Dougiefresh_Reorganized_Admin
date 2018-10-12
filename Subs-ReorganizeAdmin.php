@@ -60,6 +60,17 @@ function RA_Reorganize(&$areas)
 			elseif (isset($areas['portal']['areas']['sengines']))
 				$new['search']['areas']['sengines'] = $areas['portal']['areas']['sengines'];		
 		}
+		elseif ($needle == 'maintenance')
+		{
+			// Create a "Permissions" section using "Permissions" settings from "Members" here:
+			$new['permissions'] = array(
+				'title' => $txt['edit_permissions'],
+				'permission' => array('manage_permissions'),
+				'areas' => array(
+					'permissions' => $areas['members']['areas']['permissions'],
+				),
+			);
+		}
 		$new[$needle] = $section;
 	}
 	$areas = $new;
@@ -70,6 +81,7 @@ function RA_Reorganize(&$areas)
 	unset($areas['config']['areas']['modsettings']);
 	unset($areas['forum']['areas']['packages']);
 	unset($areas['layout']['areas']['managesearch']);
+	unset($areas['members']['areas']['permissions']);
 
 	//==========================================================================
 	// Move "Reports" from "Maintenance" area to "Main" area:

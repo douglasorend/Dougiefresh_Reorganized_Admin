@@ -1,5 +1,5 @@
 [hr]
-[center][color=red][size=16pt][b]DOUGIEFRESH'S REORGANIZED ADMIN AREA V1.1[/b][/size][/color]
+[center][color=red][size=16pt][b]DOUGIEFRESH'S REORGANIZED ADMIN AREA V1.2[/b][/size][/color]
 [url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] => [url=http://custom.simplemachines.org/mods/index.php?mod=3973]Link to Mod[/url]
 [/center]
 [hr]
@@ -34,6 +34,7 @@ This mod makes a variety of changes to the Admin area in order to more logically
 >>> [b]Attachments and Avatars[/b] => [b]Browse Files[/b] => [b]Avatars[/b] moved to [b]Members[/b] => [b]Avatars[/b] => [b]Browse Files[/b]
 >>> [url=http://custom.simplemachines.org/mods/index.php?mod=2665]Default Avatar[/url] options in [b]Modification Settings[/b] moved to [b]Members[/b] => [b]Avatars[/b] => [b]Miscellaneous[/b]
 >>> [url=http://custom.simplemachines.org/mods/index.php?mod=3116]Avatar for Banned Members[/url] option in [b]Modification Settings[/b] moved to [b]Members[/b] => [b]Avatars[/b] => [b]Miscellaneous[/b]
+> [b]Permissions[/b] section removed from [b]Members[/b] into it's own area.
 
 [color=blue][b][size=12pt][u]Compatibility Notes[/u][/size][/b][/color]
 This mod was tested on SMF 2.0.9, but should work on earlier versions of SMF 2.0.x.  SMF 1.x is not and will not be supported.
@@ -49,6 +50,9 @@ This mod does not install any other mods in order to use, so if the specified mo
 
 [color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
 [quote]
+[b][u]v1.2 - January 12th, 2015[/u][/b]
+o Moved [b]Permissions[/b] from under [b]Members[/b] into it's own area.
+
 [b][u]v1.1 - December 2nd, 2014[/u][/b]
 o Changed hook code back to original code edit in [b]Sources/Admin.php[/b]
 o Removed [url=http://custom.simplemachines.org/mods/index.php?mod=2167]Team Page[/url] from the list of areas in the [b]Configuration[/b] section...
